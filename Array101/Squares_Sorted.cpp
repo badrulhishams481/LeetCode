@@ -23,6 +23,7 @@ nums is sorted in non-decreasing order.
 #include <iostream>
 #include <vector>
 #include <utility>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -61,7 +62,9 @@ public:
         }
         cout<<endl;
         // sort in ascending order
-        nums =  selectionSort(nums, nums.size(), ascending);
+        // custom sort
+        //nums =  selectionSort(nums, nums.size(), ascending);
+        sort(nums.begin(), nums.end());
 
         return nums; 
     }
